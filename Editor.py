@@ -20,7 +20,7 @@ def nuevo():    # Esta funcion se crea para crear un fichero nuevo
 def abrir():
     global ruta
     mensaje.set("Abir fichero")
-    ruta = FileDialog.askopenfilename(initialdir='.',filetypes=(("Ficheros de texto", "*.txt"),),title="Abrir un fichero de texto")
+    ruta = FileDialog.askopenfilename(initialdir='.',filetypes=(("Ficheros de texto", "*.txt *.html *.doc *.jpg *.py *.js"),),title="Abrir un fichero de texto")
 
     if ruta != "":
         fichero = open(ruta, 'r')
